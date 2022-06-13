@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar-center {
   position: absolute;
   left: 50%;
@@ -20,6 +26,7 @@
   border-radius: 10px;
   align-items: center;
   height: 50px;
+  justify-content: space-between;
 }
 
 .search-input {
@@ -28,8 +35,145 @@
   width: 150px;
 }
 
+@media(max-width: 768px){
+  .search-input{
+    width: 400px;
+  }
+
+  .top-img{
+    display: none;
+  }
+  
+}
+
+.navbar-nav{
+  justify-content: space-between;
+}
+
 .fa-magnifying-glass {
   font-size: 20px;
   margin-right: 5px;
   color: #2F1E50;
 }
+
+/* Middle Section */
+
+.heading h1{
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+
+.top-img{
+  width: 100%
+}
+
+.top-img img {
+  width: 100%;
+}
+
+.button-div{
+  height: 100%;
+}
+
+.button-div button{
+  float: right;
+  box-shadow: 2px 2px 5px #fe682f;
+  outline: none;
+  color: white;
+  /* padding: 10px; */
+}
+
+/* User review */
+
+.user-review{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users p {
+  font-weight: bold;
+}
+
+.users-wrapper-para p{
+  margin-bottom: 0 !important;
+  margin-left: 10px;
+  font-weight: bold;
+  
+}
+
+.img img{
+  width: 50px;
+  border-radius: 50px;
+}
+
+.offer-text{
+  text-align: center;
+}
+
+.offer-text h1{
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* .arrow-div div{
+  float: right;
+  transform: rotate(240deg);
+
+} */
+
+#bottom{
+  background-color: #4E7D64;
+} 
+
+.card{
+  margin: 20px;
+}
+
+
+.card-wrapper{
+  padding: 50px;
+  margin: 0;
+}
+
+.bottom-wrapper{
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-line{
+  color: white;
+}
+
+/* .middle-card{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+.middle-card:hover{
+  @keyframes example{
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; bottom:100px;}
+    100%  {left:0px; bottom:100px;}
+  }
+} */
